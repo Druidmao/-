@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/dataList.js"></script>
+		<script type="text/javascript" src="js/tween.js"></script>
+	</head>
+	<body>
+		<!--重命名-->
+		<div class="names"><span></span><div>重名啦</div></div>
+		<section>
+			<time class="time auto">11:58</time>
+			<div class="music auto">
+				<span>
+					<a href="javascript:;"><img src="img/music/12.png"  /></a>
+				</span>
+				<span>
+					<a href="javascript:;"><img src="img/music/11.png"  /></a>
+				</span>
+				<span>
+					<a href="javascript:;"><img src="img/music/7.png"  /></a>
+				</span>
+				<span>
+					<a href="javascript:;"><img src="img/music/3.png"  /></a>
+				</span>
+				<span>
+					<a href="javascript:;"><img src="img/music/5.png"  /></a>
+				</span>
+				<span>
+					<a href="javascript:;"><img src="img/music/1.png"  /></a>
+				</span>
+				<span>
+					<a href="javascript:;"><img src="img/music/7.png"  /></a>
+				</span>
+			</div>
+			<div class="diskicon">
+				<ul class="newion">
+				</ul>
+			</div>
+			<footer class="footer">
+				<div class="start">
+					<span class="start-1">
+						<a href="javascript:;"><img src="img/Shut/1.png" /></a>
+					</span>
+					<span class="start-2">
+						<a href="javascript:;"><img src="img/Shut/2.png" /></a>
+					</span>
+					<span class="start-3">
+						<a href="javascript:;"><img src="img/Shut/3.png" /></a>
+					</span>
+					<span class="start-4">
+						<a href="javascript:;"><img src="img/Shut/4.png" /></a>
+					</span>
+					<span class="start-5">
+						<a href="javascript:;"><img src="img/Shut/6.png" /></a>
+					</span>
+					<span class="start-6">
+						<a href="javascript:;"><img src="img/Shut/tx.jpg" /></a>
+					</span>
+				</div>
+				<ul class="taskbar">
+					<li>
+						<span class="icon">
+				    		<span class="icon">
+				    			<img src="img/icon/bloggers.png" title="博客管理" >
+				    		</span>
+						</span>
+					</li>
+					<li>
+						<span class="icon">
+				    		<span class="icon">
+				    			<img src="img/icon/nr.png" title="博客管理" >
+				    		</span>
+						</span>
+					</li>
+					<li>
+						<span class="icon">
+				    		<span class="icon">
+				    			<img src="img/icon/ljx.png" title="回收站" >
+				    		</span>
+						</span>
+					</li>
+				</ul>
+			</footer>
+		</section>
+		<!--博客管理-->
+		<div class="aui-state blocks">
+			<div class="aui-outer">
+				<div class="aui-border">
+					<div class="aui-t">
+						<div class="aui-title">
+							<span>编辑博客</span>
+							<span class="shut">X</span>
+						</div>
+					</div>
+					<div class="middle">
+						<div class="mind">
+							<label>博客名称：</label>
+							<div>
+								<input type="text" class="text" name="val_name" value="" datatype="*" nullmsg="请输入应用名称">
+							</div>
+						</div>
+						<div class="mind">
+							<label>博客状态：</label>
+							<div >
+								<select name="comment-key">
+	                              	<option id="comment-key-1" value="1" selected="">允许所有人评论</option>
+							      	<option id="comment-key-2" value="2">不允许匿名评论</option>
+							      	<option id="comment-key-3" value="3">不允许评论</option>					
+                          	  </select>
+							</div>
+						</div>
+						<div class="mind">
+							<label >是否允许开放评论：</label>
+							<div>
+								<input type="radio" value="是" name="allow"/>是
+								<input type="radio" value="否" name="allow"/>否
+							</div>
+						</div>
+					</div>	
+					<div class="bottom-bar">
+						<div class="con">
+							<a class="btn" href="javascript:;">关闭</a>
+							<a class="btn"href="javascript:;">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容管理-->
+		<div class="aui-state conts">
+			<!--<div class="aui-outer">
+				<div class="aui-border">
+					<div class="aui-t">
+						<div class="aui-title appellation">
+							<span>内容管理</span>
+							<span class="shut">X</span>
+						</div>
+					</div>
+					<div class="crumb">
+						<span>大图标</span>
+						<span>中等图标</span>
+						<span>小图标</span>
+						<span>排序</span>
+						<span  class="return"><a href="javascript:;">返回上一级</a></span>
+						<div class="crumb-cr">
+						</div>
+					</div>
+					<div class="middle content">
+						<ul class="left"></ul>
+						<ul class="right"></ul>
+					</div>	
+					<div class="bottom-bar">
+						<div class="con">
+							<a class="btn" href="javascript:;">关闭</a>
+							<a class="btn"href="javascript:;">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>-->
+		</div>
+		<!--属性管理-->
+		<div class="aui-state sxgl">
+			<div class="aui-outer">
+				<div class="aui-border">
+					<div class="aui-t">
+						<div class="aui-title">
+							<span>属性管理</span>
+							<span class="shut">X</span>
+						</div>
+					</div>
+					<div class="hd">
+						<div class="hd-h">
+							<img src="img/content/fileexplorer.png"  />
+							<input type="text" class="text" name="val_name" value="表情" >
+						</div>
+						<div class="mind">
+							<label>包含：</label>
+							<div >
+								<span>21333</span>个文件
+							</div>
+						</div>
+						<div class="mind">
+							<label >是否允许添加内容：</label>
+							<div>
+								<input type="radio" value="是" name="allow"/>是
+								<input type="radio" value="否" name="allow"/>否
+							</div>
+						</div>
+					</div>	
+					<div class="bottom-bar">
+						<div class="con">
+							<a class="btn" href="javascript:;">关闭</a>
+							<a class="btn"href="javascript:;">确定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容管理空白右键-->
+		<ul class="rclick kb">
+			<li class="kb-xj">新建文件夹</li>
+			<li>排序</li>
+			<li>查看</li>
+			<li>粘贴</li>
+		</ul>
+		<!--在内容管理文件夹上右键-->
+		<ul class="rclick nrgl">
+			<li>属性</li>
+			<li class="remove">重命名</li>
+			<li>剪切</li>
+			<li class="nrgl-del">删除</li>
+		</ul>
+		<!--在文件上点击右键-->
+		<ul class="rclick wj">
+			<li>编辑</li>
+			<li>属性</li>
+			<li>重命名</li>
+			<li>复制</li>
+			<li>剪切</li>
+			<li>删除</li>
+			<li>打开</li>
+		</ul>
+		<!--计算器-->
+		<div id="container">
+			<div id="calc" class="calc">
+				<div id="top">
+					<div id="win-tool">
+						<span id="close" title="关闭" data-ico="✖">&nbsp;</span>
+						<span id="max" title="最小化" data-ico="◎">&#xe612;</span>
+						<!--<span id="max" title="最大化" data-ico="口">&nbsp;</span>
+						<span id="resize" title="最小化" data-ico="◎"><i class="iconfont change">&#xe612;</i></span>-->
+					</div>
+					<div id="result">
+						<div id="express"></div>
+						<div id="res">0</div>
+					</div>
+				</div>
+				<div id="bottom">
+					<div class="row">
+						<span id="reset" data-number="C">CE</span>
+						<span id="remove" data-number="←">←</span>
+						<span data-number="%">%</span>
+						<span data-number="/" class="tool chu">÷</span>
+					</div>
+					<div class="row">
+						<span data-number="7">7</span>
+						<span data-number="8">8</span>
+						<span data-number="9">9</span>
+						<span data-number="*" class="tool cheng">×</span>
+					</div>
+					<div class="row">
+						<span data-number="4">4</span>
+						<span data-number="5">5</span>
+						<span data-number="6">6</span>
+						<span data-number="-" class="tool jiang">ㅡ</span>
+					</div>
+					<div class="row">
+						<span data-number="1">1</span>
+						<span data-number="2">2</span>
+						<span data-number="3">3</span>
+						<span data-number="+" class="tool add">＋</span>
+					</div>
+					<div class="row">
+						<span data-number="0" class="zero">0</span>
+						<span data-number="." class="dian">.</span>
+						<span id="equals" data-number="=" class="tool eq">＝</span>
+					</div>
+				</div>
+
+				<div id="historyBox">
+					<div class="con">
+						<ul></ul>
+					</div>
+					<div class="remove">
+						<a href="javascript:;" title="清空历史记录"><i class="iconfont del">&#xe613;</i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!--<script type="text/javascript" src="js/move.js"></script>-->
+		<script type="text/javascript" src="js/package.js"></script>
+		<script type="text/javascript" src="js/smallFunction.js"></script>
+	</body>
+</html>
